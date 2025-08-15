@@ -7,7 +7,7 @@ import os
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 
 # Set HuggingFace API token
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "Your token"
 
 # Load the HuggingFace model
 endpoint = HuggingFaceEndpoint(
