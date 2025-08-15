@@ -18,24 +18,12 @@ load_dotenv()
 
 model = ChatGroq(model="llama3-8b-8192")
 
-"""from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
-
-# Set HuggingFace API token
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
-
-# Load the HuggingFace model
-endpoint = HuggingFaceEndpoint(
-    repo_id="meta-llama/Meta-Llama-3-8B-Instruct",
-    task="text-generation",
-    token=os.environ["HUGGINGFACEHUB_API_TOKEN"],
-)
-model = ChatHuggingFace(llm=endpoint)"""
 
 
 # *******************************Adding tool for real time news**********************************
 
 tool = TavilySearch(
-    max_result=2, tavily_api_key="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"
+    max_result=2, tavily_api_key="Your API key"
 )
 # Binding multiple tools together
 tools = [tool]
